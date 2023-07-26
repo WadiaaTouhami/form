@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+/* global rules  */
+/* html {
+  font-size: 62.5%;
+} */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1,
+h2,
+p,
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  /* all: unset; */
+  cursor: pointer;
+}
+
+/* input,
+textarea {
+  all: unset;
+} */
+
+/* global rules  */
+
+#survey-form {
+  width: 60%;
+  background-color: rgb(27 27 50 / 80%);
+  margin-top: 30px;
+  border-radius: 10px;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+
+#title {
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+#description {
+  margin-top: 10px;
+}
+
+#input-checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#submit {
+  margin-bottom: 60px;
+  background-color: #37af65;
+  border: none;
+  color: white;
+  height: 50px;
+  border-radius: 3px;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#feature {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+
+#name-label,
+#email-label,
+#number-label,
+#dropdown-label,
+#radios-label,
+#feature-label,
+#checkbox-label,
+#textarea-label{
+  margin-bottom: 7px;
+}
+
+span {
+  font-size: 13px;
+}
+
+#name-label{
+  padding-top: 20px;
+}
+
+input, button, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding-left: 10px;
+}
+
+textarea{
+  padding-top: 10px;
+}
